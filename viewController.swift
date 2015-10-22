@@ -136,6 +136,10 @@ extension ViewController: CLLocationManagerDelegate {
         
     }
     
+    func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        
+    }
+    
     
 }
 
