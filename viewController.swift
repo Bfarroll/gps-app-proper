@@ -122,9 +122,12 @@ extension ViewController: CLLocationManagerDelegate {
         
         
         if let newLocations = newLocations {
-            print(newLocations)
-            locationManager.stopUpdatingLocation()
             
+            let markerLocation = CLLocation(latitude: CLLocationDegrees(lat),longitude: CLLocationDegrees(long))
+            
+            print(newLocations.distanceFromLocation(markerLocation))
+            
+        
             
             
         }
